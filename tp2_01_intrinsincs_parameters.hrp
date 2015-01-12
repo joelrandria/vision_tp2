@@ -1,0 +1,101 @@
+<harpia>
+<GcState>
+	<block type="1009" id="1">
+		<position x="78.0" y="181.0"/>
+	</block>
+	<block type="1018" id="4">
+		<position x="285.0" y="179.0"/>
+	</block>
+	<block type="3" id="6">
+		<position x="498.0" y="112.0"/>
+	</block>
+	<block type="3" id="7">
+		<position x="499.0" y="177.0"/>
+	</block>
+	<block type="3" id="9">
+		<position x="499.0" y="243.0"/>
+	</block>
+	<block type="2" id="10">
+		<position x="503.0" y="363.0"/>
+	</block>
+</GcState>
+<properties>
+  <block id="1" type="1009">
+		<property desc="x resolution" name="_XRES_" value="640" />
+		<property desc="y resolution" name="_YRES_" value="480" />
+		<property desc="frame rate" name="_FRAMERATE_" value="30" />
+	</block>
+  <block id="4" type="1018">
+		<property desc="chessboard width (in squares)" name="_CB_WIDTH_" value="8" />
+		<property desc="chessboard height (in squares)" name="_CB_HEIGHT_" value="5" />
+		<property desc="image count" name="_IMAGE_COUNT_" value="100" /> --&gt;
+		<property desc="intrinsic parameters file name" name="_INTRINSIC_FILE_" type="filename" value="/Students/p1413678/intrinsincs_final_50_frames.txt" />
+	</block>
+  <block id="6" type="3">
+		<property desc="Printing mode" name="_PARAM1_" type="selector" value="default" values="default;python;csv;numpy;C" />
+		<property desc="Output mode" name="_PARAM2_" type="selector" value="stdout" values="stdout;file" />
+		<property desc="Output file" name="_PARAM3_" type="filename" value="out.txt" />
+	</block>
+  <block id="7" type="3">
+		<property desc="Printing mode" name="_PARAM1_" type="selector" value="default" values="default;python;csv;numpy;C" />
+		<property desc="Output mode" name="_PARAM2_" type="selector" value="stdout" values="stdout;file" />
+		<property desc="Output file" name="_PARAM3_" type="filename" value="out.txt" />
+	</block>
+  <block id="9" type="3">
+		<property desc="Printing mode" name="_PARAM1_" type="selector" value="default" values="default;python;csv;numpy;C" />
+		<property desc="Output mode" name="_PARAM2_" type="selector" value="stdout" values="stdout;file" />
+		<property desc="Output file" name="_PARAM3_" type="filename" value="out.txt" />
+	</block>
+  <block id="10" type="2">
+		<property desc="window name" name="_PARAM1_" value="block_BLOCKID_" />
+	</block>
+  </properties>
+<network>
+<block type="1009" id="1">
+<inputs>
+</inputs>
+<outputs>
+<output id="1" inBlock="4" input="1"/>
+</outputs>
+</block>
+<block type="1018" id="4">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+<output id="1" inBlock="6" input="1"/>
+<output id="2" inBlock="7" input="1"/>
+<output id="3" inBlock="9" input="1"/>
+<output id="4" inBlock="10" input="1"/>
+</outputs>
+</block>
+<block type="3" id="6">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+<block type="3" id="7">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+<block type="3" id="9">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+<block type="2" id="10">
+<inputs>
+<input id="1"/>
+</inputs>
+<outputs>
+</outputs>
+</block>
+</network>
+</harpia>
